@@ -1,0 +1,236 @@
+footer {
+  min-width: 768px;
+  background-color: #191919
+}
+
+.footer-nav-container, .copyright_legal_lang-container {
+  padding: 0 32px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center
+}
+
+.footer-nav {
+  padding: 42px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 0 980px;
+  flex: 0 980px;
+  -webkit-justify-content: center;
+  justify-content: center
+}
+
+.footer-nav section {
+  -webkit-flex: 1;
+  flex: 1
+}
+
+.footer-nav label, .footer-nav li {
+  line-height: 2.3;
+  font-size: 1.2em
+}
+
+.footer-nav label {
+  color: #fff
+}
+
+.footer-nav a {
+  color: #999
+}
+
+.footer-nav a:hover {
+  color: #fff
+}
+
+.footer-wechat-container {
+  position: relative
+}
+
+.footer-wechat {
+  vertical-align: middle;
+  cursor: pointer
+}
+
+.footer-wechat:hover+.footer-wechat_qrcode {
+  display: block
+}
+
+.footer-wechat_qrcode {
+  width: 180px;
+  height: 200px;
+  padding: 20px 0;
+  display: none;
+  position: absolute;
+  top: -205px;
+  left: -80px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 7px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1
+}
+
+.footer-wechat_qrcode::before {
+  margin-left: -11px;
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  border-width: 12px 11px 0;
+  border-style: solid;
+  border-color: #d8d8d8 transparent transparent;
+  content: ""
+}
+
+.footer-wechat_qrcode::after {
+  margin-left: -10px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  border-width: 11px 10px 0;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  content: ""
+}
+
+.footer-wechat_qrcode:hover {
+  display: block
+}
+
+.footer-wechat_qrcode h6 {
+  margin: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400
+}
+
+.footer-wechat_qrcode img {
+  width: 110px;
+  height: 110px;
+  margin-top: 16px;
+  padding: 5px
+}
+
+.copyright_legal_lang {
+  padding: 12px 0;
+  -webkit-flex: 0 980px;
+  flex: 0 980px;
+  border-top: 1px solid #444
+}
+
+.copyright_legal_lang-items {
+  display: -webkit-flex;
+  display: flex
+}
+
+.copyright_legal_lang-items>li {
+  margin-left: 15px
+}
+
+.copyright_legal_lang-items>li:first-child {
+  margin-left: 0;
+  margin-right: auto
+}
+
+.copyright_legal_lang-items>li, .copyright_legal_lang-items>li>a {
+  font-size: 1.1em;
+  color: #999
+}
+
+.copyright_legal_lang-items>li>a:hover {
+  color: #fff
+}
+
+.lang-switcher {
+  position: relative
+}
+
+.lang-flag {
+  vertical-align: middle;
+  cursor: pointer
+}
+
+.lang-flag:hover+.switch-lang {
+  display: block
+}
+
+.switch-lang {
+  width: 100px;
+  height: 56px;
+  display: none;
+  position: absolute;
+  top: -66px;
+  left: -42px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 7px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.switch-lang::before {
+  margin-left: -11px;
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  border-width: 12px 11px 0;
+  border-style: solid;
+  border-color: #d8d8d8 transparent transparent;
+  content: ""
+}
+
+.switch-lang::after {
+  margin-left: -10px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  border-width: 11px 10px 0;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  content: ""
+}
+
+.switch-lang:hover {
+  display: block
+}
+
+.switch-lang li::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #d8d7d8;
+  content: ""
+}
+
+.switch-lang li:first-child::before {
+  display: none
+}
+
+.switch-lang a {
+  height: 27px;
+  padding: 0 8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #666
+}
+
+.switch-lang a:hover {
+  color: #000
+}
+
+.switch-lang a>img {
+  margin-right: 12px
+}
+
+.switch-lang a>label {
+  cursor: pointer
+}
