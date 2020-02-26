@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Helvetica
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", Arial, "Microsoft YaHei", sans-serif
 }
 
 ul {
@@ -15,6 +15,11 @@ ul {
 
 a {
   text-decoration: none
+}
+
+video:focus {
+  -moz-outline: none;
+  outline: none
 }
 
 .swiper-container {
@@ -51,10 +56,12 @@ a {
   width: 12px;
   height: 12px;
   background: url(../images/indicator-bg.png) no-repeat center / contain;
+  -moz-opacity: 1;
   opacity: 1
 }
 
 .swiper-pagination-bullet:focus {
+  -moz-outline: none;
   outline: none
 }
 
@@ -133,22 +140,18 @@ a {
   min-width: 768px
 }
 
-.img-list-item {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center
-}
-
-.img-list-item a {
-  -webkit-flex: 1;
-  flex: 1;
+.img-list-item, .img-list-item a {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center
+}
+
+.img-list-item a {
+  -webkit-flex: 1;
+  flex: 1
 }
 
 .img-list-item img {
@@ -183,7 +186,9 @@ a {
 }
 
 .model-list-item a:hover {
-  box-shadow: #e5e5e5 0px 1px 7px 1px
+  -webkit-box-shadow: 0 1px 7px 1px #e5e5e5;
+  -moz-box-shadow: 0 1px 7px 1px #e5e5e5;
+  box-shadow: 0 1px 7px 1px #e5e5e5
 }
 
 .model-list-item img {
@@ -249,8 +254,7 @@ a {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   -webkit-justify-content: space-around;
-  justify-content: space-around;
-
+  justify-content: space-around
 }
 
 .poster-item {
@@ -262,7 +266,9 @@ a {
 }
 
 .poster-item:hover {
-  box-shadow: #e5e5e5 0px 1px 7px 1px
+  -webkit-box-shadow: 0 1px 7px 1px #e5e5e5;
+  -moz-box-shadow: 0 1px 7px 1px #e5e5e5;
+  box-shadow: 0 1px 7px 1px #e5e5e5
 }
 
 .poster-item a {
@@ -285,25 +291,31 @@ a {
 
 .poster-item-title {
   width: 100%;
+  padding: 0 12px;
   position: absolute;
   bottom: 29px;
-  background-color: rgba(34, 34, 34, .5)
+  background-color: rgba(34, 34, 34, .5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .poster-item-title h6 {
+  height: 29px;
   margin: 0;
-  padding: 6px 12px;
-  line-height: 1.2857;
+  line-height: 29px;
   font-size: 1.4em;
   color: #fff
 }
 
 .poster-item-content {
-  padding: 6px 12px
+  padding: 0 12px
 }
 
 .poster-item-content p {
+  height: 29px;
   margin: 0;
+  line-height: 29px;
   font-size: 1.2em
 }
 
