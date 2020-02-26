@@ -20,6 +20,8 @@ header {
   width: 50px;
   height: 30px;
   margin-left: 32px;
+  /* "\9" for IE6-10 */
+  display: inline-block\9;
   background: url(../images/samadoyo.png) no-repeat center / contain
 }
 
