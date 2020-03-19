@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/samadoyo.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <script src="scripts/samadoyo.js"></script>
+  <script src="scripts/model.js"></script>
 </head>
 <body>
   <header>
@@ -15,61 +17,16 @@
         <span>Samadoyo</span>
       </a>
     </div>
-    <nav class="global-nav">
-      <ul>
-        <li class="gn-menu">
-          <a href="class.html">茶器</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">电器</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">礼品</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">水具</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">厨房</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">咖啡</a>
-        </li>
-      </ul>
-    </nav>
+    <nav class="global-nav"></nav>
     <div class="shop-now">
       <a href="https://samadoyo.tmall.com" target="_blank">立即选购</a>
     </div>
   </header>
   <div class="main">
-    <div class="page-title">
-      <h3>
-        <a href="product.html">随手杯</a>
-        <span> > C’009</span>
-      </h3>
-    </div>
+    <div class="page-title"></div>
     <div class="img-list">
       <section>
-        <ul>
-          <li class="img-list-item">
-            <img src="images/C-009_01.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/C-009_02.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/C-009_03.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/C-009_04.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/C-009_05.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/C-009_06.jpg">
-          </li>
-        </ul>
+        <ul id="model-img-list"></ul>
       </section>
     </div>
   </div>
@@ -78,26 +35,7 @@
       <nav class="footer-nav">
         <section>
           <label>尚明产品</label>
-          <ul>
-            <li>
-              <a href="#">茶器</a>
-            </li>
-            <li>
-              <a href="#">电器</a>
-            </li>
-            <li>
-              <a href="#">礼品</a>
-            </li>
-            <li>
-              <a href="#">水具</a>
-            </li>
-            <li>
-              <a href="#">厨房</a>
-            </li>
-            <li>
-              <a href="#">咖啡</a>
-            </li>
-          </ul>
+          <ul id="footer-groups"></ul>
         </section>
         <section>
           <label>选购方式</label>

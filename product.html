@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/samadoyo.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <script src="scripts/samadoyo.js"></script>
+  <script src="scripts/product.js"></script>
 </head>
 <body>
   <header>
@@ -15,105 +17,21 @@
         <span>Samadoyo</span>
       </a>
     </div>
-    <nav class="global-nav">
-      <ul>
-        <li class="gn-menu">
-          <a href="class.html">茶器</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">电器</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">礼品</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">水具</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">厨房</a>
-        </li>
-        <li class="gn-menu">
-          <a href="#">咖啡</a>
-        </li>
-      </ul>
-    </nav>
+    <nav class="global-nav"></nav>
     <div class="shop-now">
       <a href="https://samadoyo.tmall.com" target="_blank">立即选购</a>
     </div>
   </header>
   <div class="main">
-    <div class="page-title">
-      <h3>随手杯</h3>
-    </div>
+    <div class="page-title"></div>
     <div class="img-list">
       <section>
-        <ul>
-          <li class="img-list-item">
-            <img src="images/Tea-water-separation-cup_01.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/Tea-water-separation-cup_02.jpg">
-          </li>
-          <li class="img-list-item">
-            <img src="images/点击产品 查看详情_3529.jpg">
-          </li>
-        </ul>
+        <ul id="product-list-items"></ul>
       </section>
     </div>
     <div class="model-list">
       <section>
-        <ul class="model-list-items">
-          <li class="model-list-item">
-            <a href="model.html">
-              <img src="images/C’009.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’007.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’010.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’008.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’001A.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’001B.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’001C.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’002A.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’002B.jpg">
-            </a>
-          </li>
-          <li class="model-list-item">
-            <a href="#">
-              <img src="images/C’002C.jpg">
-            </a>
-          </li>
-        </ul>
+        <ul class="model-list-items"></ul>
       </section>
     </div>
   </div>
@@ -122,26 +40,7 @@
       <nav class="footer-nav">
         <section>
           <label>尚明产品</label>
-          <ul>
-            <li>
-              <a href="#">茶器</a>
-            </li>
-            <li>
-              <a href="#">电器</a>
-            </li>
-            <li>
-              <a href="#">礼品</a>
-            </li>
-            <li>
-              <a href="#">水具</a>
-            </li>
-            <li>
-              <a href="#">厨房</a>
-            </li>
-            <li>
-              <a href="#">咖啡</a>
-            </li>
-          </ul>
+          <ul id="footer-groups"></ul>
         </section>
         <section>
           <label>选购方式</label>
