@@ -1,5 +1,6 @@
 header {
   min-width: 768px;
+  min-height: 68px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
