@@ -374,3 +374,9 @@ video:focus {
   line-height: 1.45;
   font-size: 1.2em
 }
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    min-width: unset
+  }
+}

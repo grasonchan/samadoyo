@@ -72,3 +72,51 @@ header {
 .shop-now a:hover {
   color: #262626
 }
+
+.nav-toggle {
+  display: none
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    min-width: unset;
+    min-height: 59px
+  }
+
+  .logo a {
+    width: 40px;
+    margin-left: 20px
+  }
+
+  .global-nav, .shop-now {
+    display: none
+  }
+
+  .nav-toggle {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 0 0 60px;
+    flex: 0 0 60px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center
+  }
+
+  .nav-toggle button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: url(../images/menu.png) no-repeat center / contain;
+    border: none;
+    -webkit-transition: -webkit-filter .5s;
+    transition: filter .5s
+  }
+
+  .nav-toggle button:focus {
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+    -moz-outline: none;
+    outline: none
+  }
+}
