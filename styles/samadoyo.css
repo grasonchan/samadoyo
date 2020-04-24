@@ -379,4 +379,42 @@ video:focus {
   .swiper-container {
     min-width: unset
   }
+
+  .class-nav {
+    min-width: unset
+  }
+
+  .class-nav-items {
+    margin: 0;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    overflow: scroll
+  }
+
+  .class-nav-item {
+    padding: 0
+  }
+
+  .class-nav-item a {
+    padding: 10px 15px;
+    white-space: nowrap
+  }
+
+  .class-nav-item h2 {
+    color: #666
+  }
+
+  .class-nav-item img {
+    height: 42px
+  }
+
+  .img-list {
+    min-width: unset
+  }
+
+  .img-list-item img {
+    width: 100%
+  }
 }
