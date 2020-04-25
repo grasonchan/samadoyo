@@ -450,4 +450,21 @@ video:focus {
     -moz-box-shadow: unset;
     box-shadow: unset
   }
+
+  .about-container {
+    padding: 15px 4%
+  }
+
+  .about-content {
+    min-width: unset;
+    padding: 15px;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 1.3em;
+    background-color: #fff
+  }
+
+  .about-content.contact p {
+    text-indent: unset
+  }
 }
