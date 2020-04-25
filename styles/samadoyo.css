@@ -410,11 +410,44 @@ video:focus {
     height: 42px
   }
 
+  .main {
+    min-width: unset
+  }
+
+  .page-title h3 {
+    left: 20px
+  }
+
   .img-list {
     min-width: unset
   }
 
   .img-list-item img {
     width: 100%
+  }
+
+  .model-list-items {
+    padding: 0;
+    -webkit-flex: 1 0 100%;
+    flex: 1 0 100%;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap
+  }
+
+  .model-list-item {
+    margin: 0;
+    -webkit-flex: 1;
+    flex: 1
+  }
+
+  .model-list-item a {
+    -webkit-justify-content: center;
+    justify-content: center
+  }
+
+  .model-list-item a:hover {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset
   }
 }
