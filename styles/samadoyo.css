@@ -377,7 +377,27 @@ video:focus {
 
 @media screen and (max-width: 768px) {
   .swiper-container {
-    min-width: unset
+    min-width: unset;
+    padding-bottom: 15px
+  }
+
+  .swiper-slide {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: hidden
+  }
+
+  .swiper-slide img {
+    width: 172%;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px
   }
 
   .class-nav {
