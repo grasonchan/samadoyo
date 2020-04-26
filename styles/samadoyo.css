@@ -386,6 +386,8 @@ video:focus {
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
     overflow: hidden
   }
 
