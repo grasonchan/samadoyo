@@ -1,5 +1,51 @@
 const samadoyoApi = 'http://api.hippy.io';
 
+window.onload = () => {
+  let navToggleActive = false;
+
+  const navToggle = document.querySelector(".nav-toggle");
+  const navToggleButton = navToggle.querySelector("button");
+  const flowRoot = document.querySelector(".flow-root");
+  const globalNav = document.querySelector(".global-nav");
+
+  const modalBackdrop = document.createElement("div");
+  modalBackdrop.setAttribute("class", "modal-backdrop");
+  flowRoot.insertBefore(modalBackdrop, document.querySelector("header"));
+
+  navToggle.addEventListener("touchend", () => {
+    if(navToggleActive == false) {
+      navToggleActive = true;
+
+      globalNav.style.display = "block";
+      modalBackdrop.style.zIndex = 2;
+
+      navToggleButton.setAttribute("class", "fade");
+      modalBackdrop.setAttribute("class", "modal-backdrop show");
+      flowRoot.setAttribute("class", "flow-root hide");
+
+      modalBackdrop.addEventListener("touchmove", event => {
+        event.preventDefault()
+      })
+
+      navToggleButton.addEventListener("transitionend", () => {
+        globalNav.style.display = "block";
+        modalBackdrop.style.zIndex = 2
+      })
+    } else {
+      navToggleActive = false;
+
+      navToggleButton.removeAttribute("class");
+      modalBackdrop.setAttribute("class", "modal-backdrop");
+      flowRoot.setAttribute("class", "flow-root");
+
+      navToggleButton.addEventListener("transitionend", () => {
+        globalNav.style.display = "none";
+        modalBackdrop.style.zIndex = -1
+      })
+    }
+  })
+}
+
 async function getGroupsName() {
   fetch(samadoyoApi + '/groups')
     .then(response => response.json())
