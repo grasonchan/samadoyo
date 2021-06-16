@@ -128,7 +128,7 @@ header {
   }
 
   .global-nav {
-    width: 85%;
+    width: 85vw;
     height: 100vh;
     position: absolute;
     left: 100%;
